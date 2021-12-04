@@ -33,7 +33,6 @@ int main() {
 }
 
 
-
 void clearCin() {
 	std::cin.clear();
 	std::cin.ignore(32767, '\n');

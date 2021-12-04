@@ -10,7 +10,7 @@
 
 void Menu::menu() {
 	
-	Menu::menuing.push_back(std::vector <char>(2, ' '));
+	menuing.push_back(std::vector <char>(2, ' '));
 	
 	char choice{};
 
@@ -22,5 +22,5 @@ void Menu::menu() {
 	std::cout << "Use 'w' and 's' to move up or down, press SPACE or ENTER to confirm highlighted option, or you can use the numbers listed." << std::endl;
 	
 	Board menuBoard;
-	menuBoard.drawBoard(menuing);
+	menuBoard->drawBoard(menuing);
 }
