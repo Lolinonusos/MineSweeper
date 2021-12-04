@@ -6,7 +6,7 @@
 class Menu {
 public:
 
-	std::vector<std::vector<char>> menuing;
+	std::vector <std::vector<char>> menuing;
 	void menu();
 	
 	//float getSomething() const { return something; } // Lese privat 
