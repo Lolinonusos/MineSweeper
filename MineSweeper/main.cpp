@@ -1,13 +1,12 @@
 #include "Declarations.h" // All declerations go here
 
-#include <Windows.h>
+//#include <Windows.h>
 
 #include <iostream>
-#include <conio.h>
 #include <vector>
 #include <string>
-#include <fstream>
-#include <ctime>
+//#include <fstream>
+//#include <ctime>
 
 
 #include "Menu.h" // Menu

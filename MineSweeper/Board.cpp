@@ -1,6 +1,7 @@
 #include "Board.h"
 
-
+#include <iostream>
+#include <vector>
 
 void Board::drawBoard(std::vector <std::vector <char>>x) {
 	// change i and j variables to something functional
