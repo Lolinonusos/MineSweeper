@@ -10,9 +10,12 @@
 
 void Menu::menu() {
 	
-	menuing.push_back(std::vector <char>(2, ' ')); // Pushing options into the menu vector
+	std::cout << menuing.size();
 	
 	char choice{};
+
+	int bruh{};
+	int cunt{};
 
 	std::cout << "Welcome to" << std::endl;
 	std::cout << "MineSweeper" << std::endl; // Make cool like the connect-four menu
@@ -24,6 +27,7 @@ void Menu::menu() {
 	Board* menuBoard{};
 	menuBoard->drawBoard(/*std::vector <std::vector<char>>  Do not include this part, I am not sure why tho, but whatever*/menuing);
 
-
+	CMDController* forTheMenu{};
+	forTheMenu->move(bruh, cunt);
 
 }
