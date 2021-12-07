@@ -18,7 +18,7 @@ public:
 	}*/
 
 
-	void menu(); // All menu stuffs
+	void menu(int&); // All menu stuffs
 	
 	void lookAtScores();
 

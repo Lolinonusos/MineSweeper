@@ -23,14 +23,26 @@ int main() {
 	CMDController* forTheMenu = new CMDController(); // Everything "basic" related to arrays and vectors, like moving and drawing
 	Gaming* nowWereGaming = new Gaming();
 
-	bool play = false;
-	bool manageNames = false;
-	bool checkScores = false;
-	bool quit = false;
+	int choice = 0;
 
-	while (quit == false) {
-		newMenu->menu(); // Calls the specific function in a class for specified object
+	while (choice != 3) {
+		newMenu->menu(choice); // Calls the specific function in a class for specified object
+		switch (choice) {
+		case 0:
+			nowWereGaming;
+			break;
+		case 1:
 
+			break;
+		case 2:
+
+			break;
+		case 3:
+
+			break;
+		default:
+			break;
+		}
 
 	}
 	return 0;

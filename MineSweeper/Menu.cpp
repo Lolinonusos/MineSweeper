@@ -8,20 +8,18 @@
 #include "CMDController.h"
 
 
-void Menu::menu() {
+void Menu::menu(int& choice) {
 
 	CMDController* forTheMenu{}; // Forward declarer
 	
 	std::cout << menuing.size();
-	
-	char choice{};
 
 	int y = 0;
 	int x = 0;
 	bool selected = false;
 
 	while (selected == false) {
-		//system("cls");
+		system("cls");
 
 		std::cout << "Welcome to" << std::endl;
 		std::cout << "MineSweeper" << std::endl; // Make cool like the connect-four menu
@@ -48,16 +46,19 @@ void Menu::menu() {
 			switch (y) {
 			case 0:
 				std::cout << "Play" << std::endl;
+				choice = 0;
 				break;
 			case 1:
 				std::cout << "Manage Names" << std::endl;
+				choice = 1;
 				break;
 			case 2:
 				std::cout << "Highscores" << std::endl;
+				choice = 2;
 				break;
 			case 3:
 				std::cout << "Close" << std::endl;
-
+				choice = 3;
 				break;
 
 			default:
