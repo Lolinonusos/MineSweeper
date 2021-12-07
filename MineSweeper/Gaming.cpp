@@ -18,7 +18,7 @@ void Gaming::gamingMenu(int) {
 
 	std::cout << "Run will look like this:";
 	// Draw the board here
-	std::cout << std::endl << "/// " << /*Number of bombs here*/ << " BOMBS" << " ///" << std::endl;
+	std::cout << std::endl << "/// " << numberOfBombs << " BOMBS" << " ///" << std::endl;
 
 	if (true) { // vector is more than 0 then run this
 
