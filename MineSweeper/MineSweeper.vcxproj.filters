@@ -24,12 +24,18 @@
     <ClCompile Include="CMDController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Gaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CMDController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gaming.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

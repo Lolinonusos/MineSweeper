@@ -7,18 +7,23 @@
 
 #include "Menu.h"
 
-void CMDController::drawBoard(std::vector <std::vector <std::string>> vectorBoard, int x, int y) {
+void CMDController::drawBoard(std::vector <std::vector <std::string>> vectorBoard, int y, int x) {
 	// change i and j variables to something functional
 	for (unsigned int i = 0; i < vectorBoard.size(); i++) {
 		for (unsigned int j = 0; j < vectorBoard.at(i).size(); j++) {
+			
+			if (i == y && j == x) {
+				vectorBoard[i][j] = "*";
+				}
 			std::cout << vectorBoard[i][j];
+			
 		}
 		std::cout << std::endl;
 	}
 }
 
 // By having '&' after the ints I sent from Menu.cpp I can change them however I want here
-int CMDController::move(int& x, int& y, bool& selected, int vectorSize) {
+int CMDController::move(int& y, int& x, bool& selected, int vectorSize) {
 
 	selected = false; // Turn true when SPACE or ENTER is inputed
 
@@ -51,7 +56,7 @@ int CMDController::move(int& x, int& y, bool& selected, int vectorSize) {
 				x = 0;
 			}
 			break;
-		case 13: case 27: // Confirm
+		case 27: case 32: // Confirm
 			selected = true;
 			break;
 		default:
